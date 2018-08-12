@@ -82,6 +82,7 @@ class Ui {
 
   removeRowFromTable(row){
     row.parentElement.removeChild(row)
+    this.showMessage('Book successfully removed.', 'success')
   }
 
   showMessage(message, msgClass){
