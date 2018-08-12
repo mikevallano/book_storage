@@ -59,8 +59,7 @@ Ui.prototype.addBookToTable = function(){
 }
 
 Ui.prototype.addBookToAllBooks = function(){
-  let key = this.book.isbn
-  allBooks[key] = {author: this.book.author, title: this.book.title, isbn: this.book.isbn}
+  allbooks[this.book.isbn] = this.book
   localStorage.setItem('books', JSON.stringify(allBooks))
 }
 
